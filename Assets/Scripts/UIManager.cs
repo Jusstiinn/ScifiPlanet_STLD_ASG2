@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject menuPanel;
+    public GameObject blackScreen;
+    public GameObject endScreen;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,4 +16,6 @@ public class UIManager : MonoBehaviour
     {
         
     }
+
+
 }

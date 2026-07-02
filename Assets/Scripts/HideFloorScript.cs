@@ -2,15 +2,37 @@ using UnityEngine;
 
 public class HideFloorScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public CellCollector cellCollector;
+    public GameObject deleteObjects;
+    public GameObject blockExit;
+    [SerializeField] AudioSource metalGroan;
+    bool hasHiddenFloor;
+
+    // To hide the floor when collected is true
+    void LateUpdate()
     {
-        
+        if (!hasHiddenFloor && cellCollector != null && cellCollector.collectedCell)
+        {
+            blockExit.SetActive(true);
+            StartCoroutine(WaitBeforeDelete());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    //coroutine to wait for the metal groan sound to finish before deleting the objects
+    System.Collections.IEnumerator WaitBeforeDelete()
     {
-        
+        hasHiddenFloor = true;
+
+        if (metalGroan != null)
+        {
+            metalGroan.Play();
+            //pause coroutine, and check if clip available, else wait 0 seconds
+            yield return new WaitForSeconds(metalGroan.clip != null ? 3.35f : 0f);
+        }
+
+        if (deleteObjects != null)
+        {
+            deleteObjects.SetActive(false);
+        }
     }
 }
