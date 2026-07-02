@@ -11,7 +11,6 @@ public class CellCollector : MonoBehaviour
 
     [Header("Settings")]
     public float interactDistance = 3f;
-    [SerializeField] private KeyCode interactKey = KeyCode.E;
 
     private void Awake()
     {
@@ -54,25 +53,32 @@ public class CellCollector : MonoBehaviour
     // Collect cell function
     void CollectCell(GameObject cell)
     {
-        //get MeshRenderer and hide cell visually
+        // Prevent collecting the same cell again
+        Collider col = cell.GetComponent<Collider>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
+        // Hide the cell visually
         MeshRenderer meshRenderer = cell.GetComponent<MeshRenderer>();
         if (meshRenderer != null)
         {
             meshRenderer.enabled = false;
         }
-        
+
         // Play collection sound
         if (collectSound != null && collectSound.clip != null)
         {
             collectSound.PlayOneShot(collectSound.clip);
         }
 
-        // Update score and collected boolean
-        score += 1;
+        // Update score
+        score++;
         collectedCell = true;
         Debug.Log("Collected: " + score + " cells");
 
-        // Destroy the cell when collected
+        // Destroy after sound finishes
         if (collectSound != null && collectSound.clip != null)
         {
             Destroy(cell, collectSound.clip.length);

@@ -27,7 +27,7 @@ public class HideFloorScript : MonoBehaviour
         {
             metalGroan.Play();
             //pause coroutine, and check if clip available, else wait 0 seconds
-            yield return new WaitForSeconds(metalGroan.clip != null ? 3.35f : 0f);
+            yield return new WaitForSeconds(metalGroan.clip != null ? 3.8f : 0f);
         }
 
         if (deleteObjects != null)
