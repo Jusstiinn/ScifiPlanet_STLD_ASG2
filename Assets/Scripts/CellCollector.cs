@@ -26,26 +26,27 @@ public class CellCollector : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void OnInteract()
     {
+        Debug.Log("Interact pressed");
+
         if (playerCamera == null)
-        {
             return;
-        }
 
-        // Create a raycast from center of player camera
+        //cast ray from center and assign variable
         Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-
-        if (Physics.Raycast(ray, out RaycastHit hit, interactDistance))
+        RaycastHit hit;
+        
+        // Check if the raycast hits an object within the interact distance
+        if (Physics.Raycast(ray, out hit, interactDistance))
         {
-            // Check if the object has the correct tag
-            if (hit.collider.CompareTag("Cell"))
+            Debug.Log("Hit: " + hit.collider.name);
+            GameObject target = hit.collider.gameObject;
+
+            //check for Cell tags on the object
+            if (target.CompareTag("Cell"))
             {
-                // Press E to collect
-                if (Input.GetKeyDown(interactKey))
-                {
-                    CollectCell(hit.collider.gameObject);
-                }
+                CollectCell(target);
             }
         }
     }
