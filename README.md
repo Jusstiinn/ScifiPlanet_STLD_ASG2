@@ -4,18 +4,18 @@
 You crash landed on a alien planet, as the powercells used to power your spaceship broke. You wander the planet to find 3 powercells to power your spaceship back up.
 
 ### Minimum System Requirements
-OS: Windows 10/11 64-bit
-CPU: Intel Core i5-10400 / AMD Ryzen 5 3600
-RAM: 8 GB
-GPU: NVIDIA GTX 1650 / AMD RX 580
-Storage: 5 GB SSD space
-Display: 1920px x 1080px, 60hz
+OS: Windows 10/11 64-bit  
+CPU: Intel Core i5-10400 / AMD Ryzen 5 3600  
+RAM: 8 GB  
+GPU: NVIDIA GTX 1650 / AMD RX 580  
+Storage: 5 GB SSD space  
+Display: 1920px x 1080px, 60hz  
 
 ### Controls
-Use W,A,S,D to move forwards, left, backwards and right respectively.
-press Spacebar to jump.
-Use E to interact with interactable objects
-Use a mouse to pan the camera and look around.
+Use W,A,S,D to move forwards, left, backwards and right respectively.  
+Press Spacebar to jump.  
+Use E to interact with interactable objects  
+Use a mouse to pan the camera and look around.  
 
 ### How to beat the game
 Explore the abandoned facility and find all 3 power cells to power your spaceship back up and escape. Press E to collect the items, and aviod hazards like the acid pit.
@@ -45,6 +45,6 @@ Free Sci-Fi Office Pack By Terresquall: [https://assetstore.unity.com/packages/3
 Conifers [BOTD] By Forst: [https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076](https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076)  
 ## For Audio
 ### Pixabay
-Groaning Metal By DRAGON-STUDIO: [https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/](https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/)
+Groaning Metal By DRAGON-STUDIO: [https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/](https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/)  
 Cosmos Galaxy Stars Universe Milky Way Planet Ambient Music By Denis-Pavlov-Music: [https://pixabay.com/music/ambient-cosmos-galaxy-stars-universe-milky-way-planet-ambient-music-208619/](https://pixabay.com/music/ambient-cosmos-galaxy-stars-universe-milky-way-planet-ambient-music-208619/)  
 Game Bonus 03 By Universfield: [https://pixabay.com/sound-effects/technology-game-bonus-03-487857/](https://pixabay.com/sound-effects/technology-game-bonus-03-487857/)  
