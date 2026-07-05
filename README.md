@@ -18,7 +18,7 @@ Use E to interact with interactable objects
 Use a mouse to pan the camera and look around.
 
 ### How to beat the game
-Explore the abandoned facility and find all 3 power cells to power your spaceship back up and escape.
+Explore the abandoned facility and find all 3 power cells to power your spaceship back up and escape. Press E to collect the items, and aviod hazards like the acid pit.
 
 # Known Bugs and Limitations
 3D models made using probuilder would not look the best
@@ -45,5 +45,6 @@ Free Sci-Fi Office Pack By Terresquall: [https://assetstore.unity.com/packages/3
 Conifers [BOTD] By Forst: [https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076](https://assetstore.unity.com/packages/3d/vegetation/trees/conifers-botd-142076)  
 ## For Audio
 ### Pixabay
+Groaning Metal By DRAGON-STUDIO: [https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/](https://pixabay.com/sound-effects/film-special-effects-groaning-metal-511322/)
 Cosmos Galaxy Stars Universe Milky Way Planet Ambient Music By Denis-Pavlov-Music: [https://pixabay.com/music/ambient-cosmos-galaxy-stars-universe-milky-way-planet-ambient-music-208619/](https://pixabay.com/music/ambient-cosmos-galaxy-stars-universe-milky-way-planet-ambient-music-208619/)  
 Game Bonus 03 By Universfield: [https://pixabay.com/sound-effects/technology-game-bonus-03-487857/](https://pixabay.com/sound-effects/technology-game-bonus-03-487857/)  
